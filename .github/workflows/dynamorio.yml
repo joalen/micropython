@@ -20,7 +20,7 @@ jobs:
       - name: Build repository 
         run: cd mpy-cross && make
 
-      - name: Install Dr. Memory
+      - name: Install DynamoRIO
         if: runner.os == 'Linux'
         run: | 
           sudo apt-get update
